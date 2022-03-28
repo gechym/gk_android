@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="40dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    style="@style/Widget.AppCompat.Button.Borderless"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:text="Test Title"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:tint="@color/black"
+                android:src="@drawable/ic_forward_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/body"
+                android:text="Test App blog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/deleteBtn"
+        android:src="@drawable/ic_delete_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/editBtn"
+        android:src="@drawable/ic_edit_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
